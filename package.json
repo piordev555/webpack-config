@@ -1,0 +1,65 @@
+{
+  "name": "webpack-config-react",
+  "version": "0.1.0",
+  "description": "A bare, modern Webpack 5 config to create a react app without create-react-app. Not battery included!",
+  "keywords": [
+    "react",
+    "webpack",
+    "minimal"
+  ],
+  "module": "dist/webpack.mjs",
+  "main": "dist/webpack.js",
+  "exports": {
+    ".": {
+      "require": "./dist/webpack.js",
+      "import": "./dist/webpack.mjs"
+    }
+  },
+  "homepage": "https://github.com/hoangvvo/webpack-config-react#readme",
+  "bugs": {
+    "url": "https://github.com/hoangvvo/webpack-config-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangvvo/webpack-config-react.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bundt && cp src/dirname.cjs dist/dirname.cjs"
+  },
+  "modes": {
+    "default": "src/webpack.js"
+  },
+  "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
+    "copy-webpack-plugin": "^9.0.1",
+    "fs-extra": "^10.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "kleur": "^4.1.4",
+    "react-refresh": "^0.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "bundt": "^1.1.5"
+  },
+  "peerDependencies": {
+    "babel-loader": "^8.2.2",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "babel-loader": {
+      "optional": true
+    },
+    "swc-loader": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
+}
